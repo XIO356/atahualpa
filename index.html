@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atahualpa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background-color: #FFE6C7; /* melón claro */
+      color: #4A2C00;
+    }
+
+    header {
+      background-color: #FFB67A; /* naranja melón */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 25px;
+      height: 120px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.6em;
+      text-align: center;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+
+    .volver {
+      position: absolute;
+      left: 20px;
+      background-color: #FFF1E1;
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9em;
+      text-decoration: none;
+      color: #4A2C00;
+      border: 2px solid #4A2C00;
+      transition: transform 0.2s;
+    }
+
+    .volver:hover {
+      transform: scale(1.1);
+    }
+
+    main {
+      display: flex;
+      background-color: #FFE6C7;
+      height: calc(100vh - 120px);
+    }
+
+    .izquierda {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .izquierda img {
+      width: 60%;
+      max-width: 320px;
+      border: 10px solid white;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .derecha {
+      flex: 1;
+      background-color: #FFB67A;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px;
+    }
+
+    .dato {
+      background-color: #FFF1E1;
+      width: 80%;
+      padding: 22px;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 1.4em;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .dato:nth-child(even) {
+      background-color: #FFD9B0;
+    }
+
+    @media (max-width: 800px) {
+      main {
+        flex-direction: column;
+        height: auto;
+      }
+      .izquierda img {
+        width: 70%;
+        margin: 20px 0;
+      }
+      .dato {
+        width: 90%;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://xio356.github.io/pageinca0/" class="volver">←</a>
+    <h1>Atahualpa</h1>
+  </header>
+
+  <main>
+    <div class="izquierda">
+      <img src="atahualpa.jpg" alt="Imagen de Atahualpa">
+    </div>
+    <div class="derecha">
+      <div class="dato">Fue el último gobernante del Imperio Inca, hijo de Huayna Cápac y de una princesa quiteña.</div>
+      <div class="dato">Gobernó desde Quito y se destacó como un hábil estratega militar, fortaleciendo el poder en el norte del imperio.</div>
+      <div class="dato">Su guerra civil contra su hermano Huáscar debilitó al Tahuantinsuyo justo antes de la llegada de los españoles.</div>
+      <div class="dato">Fue capturado por Francisco Pizarro en Cajamarca y ejecutado en 1533, marcando el fin del imperio incaico.</div>
+    </div>
+  </main>
+</body>
+</html>
